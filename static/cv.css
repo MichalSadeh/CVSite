@@ -1,0 +1,141 @@
+body{
+    background-color: rgb(213, 213, 252);
+    font-family: Tahoma;
+    font-size: 20px;
+}
+
+h2{
+    color:bisque;
+    text-align: center;
+    font-size: 40px;
+    font-family:Tahoma;
+    text-decoration:underline;
+}
+p{
+    text-align: center;
+    font-family: Verdana;
+    color: rgb(6, 10, 6);
+}
+
+.center{
+    text-align: center;
+    color:red;
+}
+
+h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 60px; 
+    font-family:Tahoma;
+    text-decoration:underline;
+}
+
+h3{
+    color: rgb(194, 79, 79);
+    text-align:left;
+    font-size: 40px;
+    font-family:Tahoma;
+}
+
+#gridcontainer{
+    display: grid;
+    grid-template-areas:
+    'header header main main'
+    'left left right right'
+}
+
+#item1 {
+    grid-area: header;
+    height: 100px;
+    width: 900px;
+    padding:20px;
+    margin: 10px;
+    background-color: white;
+    color: rgb(194, 79, 79);
+    border: 2px solid black;
+    font-size: 30px; 
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+#item2 {
+    grid-area: main;
+    height: 100px;
+    width: 900px;
+    padding:20px;
+    margin: 10px;
+    background-color: white;
+    color: rgb(194, 79, 79);
+    border: 2px solid black;
+    font-size: 30px; 
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+#item3 {
+    grid-area: left;
+    height: 100px;
+    width: 900px;
+    padding:20px;
+    margin: 10px;
+    background-color: white;
+    color: rgb(194, 79, 79);
+    border: 2px solid black;
+    font-size: 30px; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#item4 {
+    grid-area: right;
+    height: 100px;
+    width: 900px;
+    padding:20px;
+    margin: 10px;
+    background-color: white;
+    color: rgb(194, 79, 79);
+    border: 2px solid black;
+    font-size: 30px; 
+    font-family:Arial, Helvetica, sans-serif;  
+}
+
+#button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#contactMe{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row-reverse;
+}
+
+
+@keyframes animation {
+    0%   {background-color:red; }
+    25%  {background-color:yellow; }
+    50%  {background-color:blue; }
+    75%  {background-color:green; }
+    100% {background-color:red; }
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: animation;
+    animation-duration: 4s;
+}
+
+@media only screen and (max-width:1000px) {
+    body {
+       background-color: burlywood
+    }
+}
+
